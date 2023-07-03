@@ -1,0 +1,222 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Source Sans 3', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    padding: 7px;
+    /*border-bottom: 1px solid #000;
+    background-color: #fff;
+    box-shadow:2px 7px 50px #000;
+}
+
+nav img{
+    width: 40px;
+    height: 40px;
+}
+nav h1{
+    position: relative;
+    left:50px;
+    bottom:30px;
+    font-weight: 900;
+}
+nav ul{
+    position: relative;
+    left:78%;
+    bottom: 30px;
+}
+nav ul li{
+    list-style-type: none;
+    float:left;
+    text-align: center;
+    width:5em;
+    border-left: 1px solid gray;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+}
+
+/*CONTENEDOR
+.container {
+    position: relative;
+    margin: auto;
+    max-width: 800px; /* Puedes ajustar el ancho máximo según tus necesidades 
+}
+
+.titulo p{
+    position: absolute;
+    font-weight: bold;
+    font-size: 42px;
+    text-align: left;
+    color: #5a5959;
+    top: 200px;
+    right: 500px;
+    width: 80%;
+}
+.informacion_titulo{
+    position: absolute;
+    text-align: left;
+    font-size: 13px;
+    top: 310px;
+    right: 490px;
+    width: 80%;
+}
+
+.btn button{
+    margin-top: 40px;
+    padding:10px;
+    text-align: center;
+    background-color: #1E293B;
+    border-radius: 10%;
+    color:white;
+    font-weight: 900;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #1E293B;
+    color: white;
+}
+
+.imagenf{
+    background-color: #898989;
+
+}
+
+.imagenf img{
+    width:60px;
+    height:60px;
+} */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Source Sans 3', sans-serif;
+}
+body{
+    padding: 15px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div img{
+    width: 60px;
+    height: 60px ;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+  @media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
