@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/footer.css">    
     <title>About Us</title>
 </head>
 <body>
@@ -38,23 +40,45 @@
             </div>
         </div>
     </nav>
-    <section class="container">
-        <div>
+    <main class="container">
+        <div class="title">
             <h1>Contact Us</h1>
         </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="contact">
+            <p>
+                <span>Email: </span> coderhouse@gmail.com
+            </p>
+
+            <p>
+                <span>Phone:</span> +54 545454554
+            </p>
+
         </div>
-        <div>
-            <form action="">
-                <input type="text" name="name" id="" placeholder="Name"><br>
-                <input type="text" name="name" id="" placeholder="Lastname"><br>
-                <input type="email" name="name" id="" placeholder="Email">
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Message..."></textarea><br><br>
-                <input type="button" value="send">
-            </form>
-        </div>
-    </section>
+        <form action="#" class="form-container">
+            <div class="names">
+                <input type="text" id="nombre" name="nombre" placeholder="Name" required>
+            </div>
+        
+            <div class="lastname">
+                <input type="text" id="apellido" name="apellido" placeholder="Lastname" required>
+            </div>
+            <div class="email">
+                <input type="email" id="correo" name="correo" placeholder="email" required>
+
+            </div>
+
+            <div class="message">
+                <textarea id="mensaje" name="mensaje" placeholder="Message" required></textarea>
+
+            </div>
+
+            <div class="submit-button">
+                <button>SEND</button>
+            </div>
+        </form>
+        
+    </main>
+
     <footer>
         <div class="footer">
             <p>Copyright© Todos los derechos reservados </p>

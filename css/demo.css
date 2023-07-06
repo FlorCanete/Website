@@ -1,0 +1,30 @@
+.containerDemo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 80vh;
+    gap:50px;
+  }
+  .demo-title, .video-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .demo-title p, .video-title p{
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px grey;
+  }
+  .demo-title button{
+    background-color: #1E293B;
+    padding: 18px 50px;
+    border-style: none;
+    border-radius: 30px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
