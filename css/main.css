@@ -101,8 +101,7 @@ div img{
     justify-content: center;
     align-items: center;
     padding: 15px;
-
-}
+  }
 
 .container2{
   grid-column: span 12;
@@ -227,11 +226,45 @@ footer{
 .containerFeauter .feauter:nth-child(1) .info p{
   width: 215px;
 }
+/*----------------------------ABOUT US--------------------------------*/
+.containerAboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 15px;
+  gap:50px
+}
 
+/*----------------------------DEMO--------------------------------*/
+.containerDemo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 80vh;
+}
 
-  /*MEDIAQUERIES*/
+.demo, .video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo button{
+  background-color: #1E293B;
+  padding: 18px 50px;
+  border-style: none;
+  border-radius: 30px;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+  /*---------------------MEDIAQUERIES------------------------------*/
   @media (min-width: 700px){
-    /*BODY*/
     .container{
       height: 80vh;
     }
@@ -265,6 +298,7 @@ footer{
     .containerFeauter{
       flex-direction: row;
     }
+    /**/
   }
 
   @media (max-width: 700px) {
