@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>About Us</title>
 </head>
 <body>
     <nav>
-        <img src="imagenes/aluminio.png" alt="">
-        <h1>VJA</h1>
-        <ul>
-            <li><a href="feature.html">Feauter</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="demo.html">Demo</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>A</li><!---Select Idiomas -->
-        </ul> 
+        <div class="flex">
+            <div class="">
+                <img src="../imagenes/aluminio.png" alt="">          
+            </div>
+            <div class="name">
+                <h1>VJA</h1>
+            </div>
+
+            <div>
+                <input id="menu-toggle" type="checkbox" />
+
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+
+                <ul class="menu"> 
+                    <li class="menu-lateral__item"><a href="./feature.html">Feauter</a></li>
+
+                    <li class="menu-lateral__item"><a href="./aboutus.html">About Us</a></li>
+
+                    <li class="menu-lateral__item"><a href="./demo.html">Demo</a></li>
+
+                    <li class="menu-lateral__item"><a href="./contact.html">Contact</a></li>
+
+                </ul>
+               
+            </div>
+        </div>
     </nav>
     <section class="container">
         <div>
@@ -37,9 +56,9 @@
         </div>
     </section>
     <footer>
-        <p class="footer">
-            copyright Flodres
-        </p>
+        <div class="footer">
+            <p>Copyright© Todos los derechos reservados </p>
+        </div>
     </footer>
 </body>
 </html>
