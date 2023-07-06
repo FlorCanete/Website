@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Incio</title>
-</head>
-<body>
-    <nav>
-        <div class="flex">
-            <div class="">
-                <img src="./imagenes/aluminio.png" alt="">          
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Incio</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="flex">
+                <div class="">
+                    <a href="index.html"><img src="./imagenes/aluminio.png" alt=""></a>
+                </div>
+                <div class="name">
+                    <h1>VJA</h1>
+                </div>
+
+                <div>
+                    <input id="menu-toggle" type="checkbox" />
+
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+
+                    <ul class="menu"> 
+                        <li class="menu-lateral__item"><a href="./pages/feature.html">Feauter</a></li>
+
+                        <li class="menu-lateral__item"><a href="./pages/aboutus.html">About Us</a></li>
+
+                        <li class="menu-lateral__item"><a href="./pages/demo.html">Demo</a></li>
+
+                        <li class="menu-lateral__item"><a href="./pages/contact.html">Contact</a></li>
+
+                    </ul>
+                
+                </div>
             </div>
-            <div class="name">
-                <h1>VJA</h1>
+        </nav>
+
+        <main class="container">
+            <div class="container2">
+                <div class="title">
+                    <p>Facilitates the management of your company or business</p>
+                </div>
+                
+                <div class="information">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id tempore culpa eum suscipit,
+                        iste quis iusto officiis totam amet aut natus saepe, dolore tenetur libero esse recusandae, 
+                        minima facilis maiores.
+                    </p>
+                </div>
+    
+                <div class="images">
+                    <img class="first-image" src="./imagenes/imagendash.png" alt="Imagen dashboard">
+                    <img class="second-image" src="./imagenes/imagentable.png" alt="Imagen table">
+                </div>
+    
+                <div class="button">
+                    <button type="button">Get started</button>
+                    <button>Learn more</button>
+                </div>
             </div>
+        </main>
 
-            <div>
-                <input id="menu-toggle" type="checkbox" />
-
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
-
-                <ul class="menu"> 
-                    <li class="menu-lateral__item"><a href="./pages/feature.html">Feauter</a></li>
-
-                    <li class="menu-lateral__item"><a href="./pages/aboutus.html">About Us</a></li>
-
-                    <li class="menu-lateral__item"><a href="./pages/demo.html">Demo</a></li>
-
-                    <li class="menu-lateral__item"><a href="./pages/contact.html">Contact</a></li>
-
-                </ul>
-               
+        <footer>
+            <div class="footer">
+                <p>Copyright© Todos los derechos reservados </p>
             </div>
-        </div>
-    </nav>
-
-    <main class="container">
-        
-    </main>
-
-    <footer>
-        <div class="footer">
-            <p>Copyright© Todos los derechos reservados </p>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
