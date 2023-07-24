@@ -111,6 +111,11 @@ margin-right: auto;
   transform: rotate(-405deg);
 }
 
+
+.account a
+{
+  color: #355B9B;
+}
 /**/
 .container
 {
@@ -165,7 +170,7 @@ margin-right: auto;
   width: 100%;
   height: 135px;
   z-index: 1;
-  filter: blur(1.5px);
+  filter: blur(1px);
 }
 
 .second-image
@@ -178,7 +183,7 @@ margin-right: auto;
   width: 85%;
   height: 135px;
   z-index: 2;
-  filter: blur(1.5px);
+  filter: blur(1px);
 
 }
 .button button:nth-child(1)
@@ -426,9 +431,95 @@ margin-right: auto;
   align-items: center;
   height: 80vh;
   padding: 15px;
-  gap:50px
+  gap:40px
 }
 
+.information1
+{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  align-items: start;
+}
+
+.information1 .title2
+{
+  color: #355B9B;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.information1 .title2 svg{
+    width: 90px;
+}
+
+.information2
+{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  align-items: start;
+}
+.information2 .title2
+{
+  color: #355B9B;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.information2 .title2 svg{
+  width: 50px;
+}
+
+
+.info-image
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-image img
+{
+  width: 50%;
+  height: 50%;
+}
+
+.person1
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #355B9B;
+  gap: 10px;
+}
+
+.person1 h1{
+  color:#355B9B;
+}
+
+.person2
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #355B9B;
+  gap: 10px; 
+}
+
+.person2 h1{
+  color:#355B9B;
+}
 
 /**/
 
