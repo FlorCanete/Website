@@ -429,7 +429,7 @@ margin-right: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 130vh;
   padding: 15px;
   gap:40px
 }
@@ -483,6 +483,7 @@ margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .info-image img
@@ -490,7 +491,10 @@ margin-right: auto;
   width: 50%;
   height: 50%;
 }
-
+.info-image .person-img2
+{
+  width: 46% !important	;
+}
 .person1
 {
   display: flex;
@@ -521,6 +525,11 @@ margin-right: auto;
   color:#355B9B;
 }
 
+.person1 p, .person2 p
+{
+  text-align: justify;
+  padding: 10px;
+}
 /**/
 
 footer
@@ -671,4 +680,14 @@ footer
     {
       gap: 40px;
     }
+    .containerAboutUs
+    {
+      height: auto;
+    }
+    .information1, .information2, .info-image
+    {
+      flex-direction: column;
+    }
+
+  
   } 
