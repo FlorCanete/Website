@@ -110,6 +110,10 @@ body {
   color: #fff;
   padding: 2px 10px;
 }
+.account:hover {
+  background: linear-gradient(45deg, #1E293B, #fff);
+  animation: sesion 20s linear infinite;
+}
 
 .container__footer {
   background-color: #1E293B;
@@ -265,7 +269,18 @@ body {
   width: 50%;
   height: 50%;
 }
+.info-image img:hover {
+  animation: spin 2s linear infinite;
+}
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .person {
   display: flex;
   flex-direction: column;
@@ -383,16 +398,6 @@ input:focus ~ label, input input:valid ~ label {
   color: #1E293B;
 }
 
-input:focus ~ .bar::before, input input:focus ~ .bar::after {
-  width: 50%;
-}
-
-input:focus ~ .highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  -moz-animation: inputHighlighter 0.3s ease;
-  animation: inputHighlighter 0.3s ease;
-}
-
 label {
   color: #999;
   font-size: 18px;
@@ -437,6 +442,10 @@ label {
   right: 50%;
 }
 
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width: 50%;
+}
+
 .highlight {
   position: absolute;
   height: 60%;
@@ -445,6 +454,12 @@ label {
   left: 0;
   pointer-events: none;
   opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
 }
 
 @-webkit-keyframes inputHighlighter {
@@ -553,6 +568,79 @@ label {
   color: #e6eeff;
   background: #273957;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.demo--title button {
+  background-color: #1E293B;
+  padding: 18px 50px;
+  border-style: none;
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle ~ .menu li-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .info-image {
+    flex-direction: column;
+  }
+  .container__contact h1 {
+    font-size: 40px;
+  }
+  .container__contact p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .container__contact--information p {
+    font-size: 15px;
+  }
+  .container__home {
+    flex-direction: column;
+  }
+  .home h1 {
+    font-size: 30px;
+  }
+  .container__information--imagen {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
