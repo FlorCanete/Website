@@ -1,0 +1,108 @@
+.nav
+{
+  display: flex;
+  width: 100%;
+  z-index: 100;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1E293B;
+  color: #fff;
+  padding: 15px;
+  gap: 10px;
+  box-shadow: 2px 0px 10px#222;
+}
+
+.name
+{
+margin-right: auto;
+}
+
+.menu
+{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+  margin-top: 10px;
+
+    & > li 
+    {
+        margin: 0 1rem;
+        overflow: hidden;
+    }
+    &-lateral__item a
+    {
+    text-decoration: none;
+    color: #fff;;
+    font-weight: 600;
+    }
+
+    &-button-container
+    {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }   
+}
+
+#menu-toggle
+{
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after 
+{
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+  
+}
+
+.menu-button::after
+{
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before
+{
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button
+{
+  background: rgba(255, 255, 255, 0);
+  
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after
+{
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+
+.account 
+{
+    background-color: #617596;
+    border-radius: 30px;
+    color: #fff;
+    padding: 2px 10px;
+
+  &:hover{
+    background: linear-gradient(45deg, #1E293B, #fff);
+    animation: sesion 20s linear infinite;
+  }
+}

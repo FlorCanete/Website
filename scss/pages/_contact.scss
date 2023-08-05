@@ -1,0 +1,22 @@
+.container__contact h1
+{
+    font-size: 60px;
+    color: #617596;
+
+    &__contact p
+    {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__contact--information p
+    {
+        font-size: 25px;
+    }
+
+    &__contact--information span
+    {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,108 @@
+.home .button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    & .button__start
+    {
+        background-color: #617596;
+        border-style: none;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        padding:10px 15px;
+        cursor: pointer;
+        
+        &:hover
+        {
+            background-color: #ffff;
+            color: #617596;
+            box-shadow: 1px 1px 30px -5px #222;
+            transition: 600ms;
+        
+        }
+    }
+    &__information
+    {
+        text-decoration: none;
+        color: #617596;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover
+        {
+          color:#fff;
+          color:#fff;
+          text-transform: uppercase;
+          font-weight: 900;
+            color:#fff;
+          text-transform: uppercase;
+          font-weight: 900;
+        }
+
+        &-title button
+        {
+          background-color: #1E293B;
+          padding: 18px 50px;
+          border-style: none;
+          border-radius: 30px;
+          color:#fff;
+          text-transform: uppercase;
+          font-weight: 900;
+        }
+    }
+}
+
+.container__contact__form--button button
+{
+    position: relative;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    background: #1E293B;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .4s;
+
+    & span
+    {
+        position: absolute;
+        top: -30px;
+        left: -100%;
+        width: 100%;
+        height:100px;
+        background-color: #617596;
+        opacity: 0.6;
+        transition: .4s;
+    }
+    &:hover span
+    {
+        left: -10%;
+        
+    }
+    &:hover
+    {
+        color: #e6eeff;
+        background: #273957;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .7);
+    }
+}
+.demo--title button
+{
+  background-color: #1E293B;
+  padding: 18px 50px;
+  border-style: none;
+  border-radius: 30px;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VJA</title>
+    <link rel="shortcut icon" href="../imagenes/aluminio.png">
+    <script src="/library/fontawasome.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-800 font-mono">
+    <div class="container m-auto my-[14%] ">
+        <div class="grid grid-rows-3 grid-flow-col h-96 md:w-[30rem] sm:w-96 m-auto">
+            <div class="row-span-4 ">
+                <img src="../imagenes/tubos.jpg" alt="" class="h-full rounded-l-[20px]">
+            </div>
+            <div class="col-span-2 bg-slate-100 rounded-tr-[20px] text-center">
+                <h1 class="font-mono pt-14 text-2xl font-semibold">SIGN IN</h1>
+            </div>
+            <div class="row-span-2 md:px-6 sm:px-4 col-span-2 bg-slate-100 rounded-br-[20px] text-center">
+                <form action="#" method="POST">
+                    <div class="ml-20 pl-20">
+                        <select name="translate" id="trans">
+                            <option value="es">Español</option>
+                            <option value="en">Ingles</option>
+                        </select>    
+                    </div>
+                    <div class="">
+                        <div>
+                            <label for="username" class="font-mono">Username</label>                    
+                            <input id="username" autocomplete="username" name="username" type="text" class="rounded-lg border border-gray-300 px-3 py-1 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-900 focus:outline-none focus:ring-indigo-900 sm:text-sm" placeholder="Username">
+                        </div>
+                        <div class="pt-4">
+                            <label for="password" class="font-mono">Password</label>
+                            <input id="password" autocomplete="current-password" name="password" type="password" class="rounded-lg border border-gray-300 px-3 py-1 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-900 focus:outline-none focus:ring-indigo-900 sm:text-sm" placeholder="Password" autocomplete="on">
+                        </div>
+                    </div>
+
+                    <button  type="submit" class=" mt-10 px-2 bg-slate-800 rounded-lg text-white ring-2 ring-slate-800 hover:bg-slate-100 hover:text-black">
+                        LOGIN
+                    </button>   
+                </form>
+                <div class="text-xs pt-1">
+                    <a href="#" class="text-slate-800 hover:text-slate-500">Forgot your password?</a>
+                </div>
+            </div>
+        </div> 
+    </div>  
+</body>
+</html>

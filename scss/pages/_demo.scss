@@ -1,0 +1,65 @@
+.demo--title, .video--title
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 30px;
+}
+.informacion__sistema
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.informacion__sistema h1
+{
+    font-weight: 600;
+}
+
+.informacion__sistema p
+{
+ font-size: 18px;
+}
+
+.prueba__sistema
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prueba__sistema p
+{
+    font-weight: 600;
+}
+.video--title p
+{
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px grey;
+}
+
+.demo--title p:nth-child(2)
+{
+  color: #617596;
+}
+
+.video--iframe 
+{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+.video--iframe iframe 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
