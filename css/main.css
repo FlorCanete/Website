@@ -39,8 +39,10 @@ body {
   box-shadow: 2px 0px 10px #222;
 }
 
-.name {
-  margin-right: auto;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .menu {
@@ -83,6 +85,11 @@ body {
   width: 30px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
 }
 
 .menu-button::after {
@@ -381,7 +388,7 @@ body {
   margin-bottom: 45px;
 }
 
-input {
+.input-text {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -389,16 +396,16 @@ input {
   border: none;
   border-bottom: 1px solid #757575;
 }
-input:focus {
+.input-text:focus {
   outline: none;
 }
-input:focus ~ label, input input:valid ~ label {
+.input-text:focus ~ label, .input-text input:valid ~ label {
   top: -20px;
   font-size: 14px;
   color: #1E293B;
 }
 
-label {
+.container__contact__form--group label {
   color: #999;
   font-size: 18px;
   font-weight: normal;
@@ -581,18 +588,31 @@ input:focus ~ .highlight {
 }
 
 @media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    margin-top: 100px;
     left: 0;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
-  .menu-button-container {
-    display: flex;
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   .menu > li {
     display: flex;
@@ -606,18 +626,11 @@ input:focus ~ .highlight {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  .account {
+    border-radius: 0;
   }
-  #menu-toggle ~ .menu li-toggle:checked ~ .menu li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  .account a {
+    color: #FFE779;
   }
   .info-image {
     flex-direction: column;
@@ -637,9 +650,16 @@ input:focus ~ .highlight {
   }
   .home h1 {
     font-size: 30px;
+    text-align: center;
   }
   .container__information--imagen {
     flex-direction: column;
+  }
+  .information .container__information h2 {
+    text-align: center;
+  }
+  .information .container__information h3 {
+    text-align: center;
   }
 }
 
